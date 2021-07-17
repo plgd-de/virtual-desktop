@@ -1,9 +1,13 @@
-# init-script for virtual-desktop
+# Virtual-Desktop-Environment with Proxmox, LXC, RDP, LXDE and Guacamole
 
-made for the lxc template "debian-10-standard_10.7-1_amd64.tar.gz".
+create container with lxc template "debian-10-standard_10.7-1_amd64.tar.gz" in proxmox virtual environment
 
-it creates lightweight lxc virtual rdp desktops with browser, terminal and editor for our clientless remote desktop gateway guacamole hosted on proxmox.
-
-run with
+run this script in container as root, it creates lxc virtual rdp desktops with browser, terminal and editor:
 
     wget https://raw.githubusercontent.com/playgroun-de/virtual-desktop/main/init.sh && bash init.sh
+
+copy finished container as much clients as you need
+
+connect to containers with guacamole via rdp
+
+have fun!
