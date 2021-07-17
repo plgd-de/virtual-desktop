@@ -24,9 +24,10 @@ chown magenta:magenta /home/magenta/.config/lxpanel/LXDE/panels/panel
 apt remove clipit -y
 apt install htop neofetch nmap tmux tldr -y
 
-echo "init abgeschlossen"
-
 rm ./panel.conf
 rm ./init.sh
+rm ./temp
 
-echo "temporäre downloads entfernt"
+echo "temporäre dateien entfernt"
+
+echo "init abgeschlossen"
