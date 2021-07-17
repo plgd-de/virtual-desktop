@@ -1,25 +1,17 @@
 #!/bin/bash
 apt update
 apt upgrade -y
-apt install xrdp -y
-apt install lxde -y
-#apt remove clipit -y
-#apt install nmap -y
-#apt install tmux -y
-#apt install tldr -y
-#apt install htop -y
-#apt install neofetch -y
+apt install xrdp lxde -y
 
-useradd magenta; echo -e "Magenta1\nMagenta1" | passwd magenta
+useradd -m magenta
+passwd magenta
 adduser magenta netdev
 
 echo "lxsession -s LXDE -e LXDE" > /home/magenta/.Xclients
 chown magenta:magenta /home/magenta/.Xclients
 chmod +x /home/magenta/.Xclients
 
-systemctl restart xrdp
-
-nano 
+systemctl restart xrdp 
 
 #grep -v  "show_trash=1" /home/magenta/.config/pcmanfm/LXDE/desktop-items-0.conf > temp
 #mv temp /home/magenta/.config/pcmanfm/LXDE/desktop-items-0.conf
@@ -28,6 +20,9 @@ nano
 #wget https://raw.githubusercontent.com/playgroun-de/virtual-desktop/main/panel.conf
 #cp panel.conf /home/magenta/.config/lxpanel/LXDE/panels/panel
 #chown magenta:magenta /home/magenta/.config/lxpanel/LXDE/panels/panel
+
+#apt remove clipit -y
+#apt install htop neofetch nmap tmux tldr -y
 
 echo "init abgeschlossen"
 
