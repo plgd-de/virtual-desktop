@@ -13,7 +13,8 @@ chmod +x /home/magenta/.Xclients
 
 systemctl restart xrdp 
 
-startlxde
+read -p "xrdp Verbindung per Client starten, dann hier mit Enter bestätigen: " var
+echo $var
 
 grep -v  "show_trash=1" /home/magenta/.config/pcmanfm/LXDE/desktop-items-0.conf > temp
 mv temp /home/magenta/.config/pcmanfm/LXDE/desktop-items-0.conf
@@ -30,6 +31,6 @@ rm ./panel.conf
 rm ./init.sh
 rm ./temp
 
-echo "temporäre dateien entfernt"
+apt autoremove -y
 
 echo "init abgeschlossen"
