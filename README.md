@@ -2,7 +2,7 @@
 
 made for the lxc template "debian-10-standard_10.7-1_amd64.tar.gz".
 
-it creates lightweight lxc virtual rdp desktops with browser, terminal and editor for our a clientless remote desktop gateway guacamole hosted on proxmox.
+it creates lightweight lxc virtual rdp desktops with browser, terminal and editor for our clientless remote desktop gateway guacamole hosted on proxmox.
 
 run with
 
