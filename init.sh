@@ -3,12 +3,12 @@ apt update
 apt upgrade -y
 apt install xrdp -y
 apt install lxde -y
-apt remove clipit -y
-apt install nmap -y
-apt install tmux -y
-apt install tldr -y
-apt install htop -y
-apt install neofetch -y
+#apt remove clipit -y
+#apt install nmap -y
+#apt install tmux -y
+#apt install tldr -y
+#apt install htop -y
+#apt install neofetch -y
 
 useradd magenta; echo -e "Magenta1\nMagenta1" | passwd magenta
 adduser magenta netdev
@@ -31,7 +31,7 @@ nano
 
 echo "init abgeschlossen"
 
-rm ./panel.conf
+#rm ./panel.conf
 rm ./init.sh
 
 echo "temporäre downloads entfernt"
