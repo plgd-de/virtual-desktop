@@ -4,6 +4,7 @@ apt upgrade -y
 apt install xrdp lxde -y
 
 useradd -m magenta
+echo "Bitte setze ein Passwort für den Benutzer magenta"
 passwd magenta
 adduser magenta netdev
 
@@ -13,7 +14,7 @@ chmod +x /home/magenta/.Xclients
 
 systemctl restart xrdp 
 
-read -p "xrdp Verbindung per Client starten, dann hier mit Enter bestätigen: " var
+read -p "Bitte XRDP-Verbindung per Client starten, dann mit Enter bestätigen " var
 echo $var
 
 grep -v  "show_trash=1" /home/magenta/.config/pcmanfm/LXDE/desktop-items-0.conf > temp
@@ -32,6 +33,8 @@ rm ./init.sh
 rm ./temp
 
 apt autoremove -y
+
+systemctl restart xrdp
 
 echo
 echo "########################"
