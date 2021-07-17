@@ -8,4 +8,4 @@ it creates  lightweight rdp reachable desktops with browser for our a clientless
 
 run with
 
-    wget https://raw.githubusercontent.com/playgroun-de/virtual-desktop/main/init-virtual-desktop.sh && bash init-virtual-desktop.sh
+    wget https://raw.githubusercontent.com/playgroun-de/virtual-desktop/main/init.sh && bash init.sh
