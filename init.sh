@@ -33,4 +33,9 @@ rm ./temp
 
 apt autoremove -y
 
-echo "init abgeschlossen"
+echo
+echo "########################"
+echo "#                      #"
+echo "#  init abgeschlossen  #"
+echo "#                      #"
+echo "########################"
