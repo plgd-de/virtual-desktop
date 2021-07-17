@@ -3,7 +3,12 @@ apt update
 apt upgrade -y
 apt install xrdp -y
 apt install lxde -y
-apt remove clipit
+apt remove clipit -y
+apt install nmap -y
+apt install tmux -y
+apt install tldr -y
+apt install htop -y
+apt install neofetch -y
 
 useradd -m magenta
 passwd magenta
@@ -25,4 +30,4 @@ chmod +x /home/magenta/.Xclients
 
 systemctl restart xrdp
 
-echo "done"
+echo "init abgeschlossen"
